@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Elements of HTML5</title>
+</head>
+
+<body>
+<ol>
+	<li><h3>Heading Element:</h3></li>
+	<ul>
+		<li>Syntax:</li>
+		<p>
+			&lth1>This is heading 1&lt/h1></p>
+			&lth2>This is heading 2&lt/h2></p>
+			&lth3>This is heading 3&lt/h3></p>
+		</p>
+		
+		<li>Output:</li>
+		<h1>This is heading 1</h1>
+		<h2>This is heading 2</h2>
+		<h3>This is heading 3</h3>
+		
+	</ul>
+	
+	<hr style="border: 1px solid black;" />
+	
+	<li><h3>Paragraph Element</h3></li>
+	<ul>
+		<li>Syntax:</li>
+		<p>
+		&ltp> this is a paragraph.<br>
+		this is an example of <br>
+		Paragraph. &lt/p>
+		
+		<li>Output:</li>
+		<p> this is a paragraph.
+		this is an example of
+		Paragraph. </p>
+	</ul>
+	
+	<hr style="border: 1px solid black;" />
+	
+	<li><h3>Line break Element</h3></li>
+	<ul>
+		<li>Syntax:</li>
+		<p>
+		&ltp>a&ltbr>p&ltbr>p&ltbr>l&ltbr>e&ltbr>s &lt/p>
+		
+		<li>Output:</li>
+		<p>a<br>p<br>p<br>l<br>e<br>s </p>
+		
+	</ul>
+	
+	<hr style="border: 1px solid black;" />
+	
+	<li><h3>Blockquote Element</h3></li>
+	<ul>
+		<li>Syntax:</li>
+		<p>
+		&ltblockquote>"This is a blockquote<br>
+		This is an example of <br>
+		blockquote"&lt/blockquote>
+		<p>
+		<li>Output:</li>
+		<blockquote>"This is a blockquote
+		This is an example of 
+		blockquote"</blockquote>
+	</ul>
+	
+	<hr style="border: 2px solid black;" />
+	
+	<li><h3>Phrase Element</h3></li>
+	<ul>
+		<li>Syntax:</li>
+		
+		&ltb>bold&lt/b> text. <br>
+		&ltem>enphasized&lt/em> text. <br>
+		&lti>italicized&lt/i> text. <br>
+		&ltmark>mark&lt/mark> text. <br>
+		&ltsmall>small&lt/small> text. <br>
+		&ltstrong>strong&lt/strong> text. <br>
+		&ltsub>sub&lt/sub> text. <br>
+		&ltsup>sup&lt/sup> text. <br>
+		
+		<li>Output:</li>
+		
+		<b>bold</b> text.
+		<em>enphasized</em> text.
+		<i>italicized</i> text.
+		<mark>mark</mark> text.
+		<small>small</small> text.
+		<strong>strong</strong> text.
+		<sub>sub</sub> text.
+		<sup>sup</sup> text.
+	</ul>
+	
+	<hr style="border: 2px solid black;" />
+	
+	<li><h3>Lists</h3></li>
+	<ol type="a">
+		<li><h3>Lists Unordered</h3></li>
+		<ul>
+			<li>Syntax:</li>
+			<p>
+			&ltli>example a&lt/li><br>
+			&ltli>example b&lt/li>
+			<p>
+			<li>Output:</li>
+			<li>example a</li>
+			<li>example b</li>
+			
+		</ul>
+		
+		<li><h3>Lists Ordered</h3></li>
+		<ul>
+			<li>Syntax:</li>
+			<p>
+			&ltol><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&ltli>example a&lt/li><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&ltli>example b&lt/li><br>
+			&lt/ol>
+			<p>
+			<li>Output:</li>
+			<ol>
+				<li>example a</li>
+				<li>example b</li>
+			</ol>
+		</ul>
+		
+		<li><h3>Description list</h3></li>
+		<ul>
+			<li>Syntax:</li>
+			
+			&ltdl><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&ltdt>Triangle&lt/dt><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltdd>Pyramid&lt/dd><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&ltdt>Square&lt/dt><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltdd>Cube&lt/dd><br>
+			&lt/dl>
+			
+			<li>Output:</li>
+			<dl>
+			&nbsp;&nbsp;&nbsp;&nbsp;<dt>Triangle</dt>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<dd>Pyramid</dd>
+			&nbsp;&nbsp;&nbsp;&nbsp;<dt>Square</dt>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<dd>Cube</dd>
+			</dl>
+			
+		</ul>
+	</ol>
+	
+	<hr style="border: 1px solid black;" />
+	
+	<li><h3>Special Characters</h3></li>
+	<ul>
+		<li>Syntax:</li>
+		
+		"copyright": &amp;copy <br>&ltbr>
+		"copyright": &amp;lt <br>&ltbr>
+		"copyright": =&amp;gt <br>&ltbr>
+		"copyright": =&amp;amp
+		
+		<li>Output:</li>
+		
+		"copyright": &copy <br>
+		"copyright": &lt <br>
+		"copyright": =&gt <br>
+		"copyright": =&amp <br>
+		
+	</ul>
+	
+	<hr style="border: 2px solid black;" />
+	
+	<li><h3>Anchor Element</h3></li>
+	<ol type="a">
+		<li>Absolute link</li>
+		<ul>
+			<li>Syntax:</li>
+			
+			Link to a different website: &lta href="http://google.ca">www.google.ca &lt/a>
+			
+			<li>Output:</li>
+			Link to a different website: <a href="http://google.ca">www.google.ca </a>
+			
+		</ul>
+		
+		<li>Relative link</li>
+		<ul>
+			<li>Syntax:</li>
+			
+			Link to a different page on the same website: &lta href="../Lab1/index.html">Lab1 &lt/a>
+			
+			<li>Output:</li>
+			
+			Link to a different page on the same website: <a href="../Lab1/index.html">Lab1 </a>
+		</ul>
+		
+		<li>E-mail hyperlink</li>
+		<ul>
+			<li>Syntax:</li>
+			
+			Link to mail program connected with browser or a messages is displayed &lta href="mailto:me@gmail.com">me@gmail.com &lt/a>
+			
+			<li>Output:</li>
+			
+			Link to mail program connected with browser or a messages is displayed <a href="mailto:me@gmail.com">me@gmail.com </a>
+		</ul>
+	</ol>
+	
+	<hr style="border: 2px solid black;" />
+	
+	<li><h3>Meter Element</h3></li>
+	<ul>
+		<li>Syntax:</li>
+		
+		<!-- I dont know why it says to put max 100 50 0 when the max doesnt change and it doesnt show up -->
+		&ltmeter value="100" min="0" max="100"> max 100 &lt/meter><br>
+		&ltmeter value="50" min="0" max="100"> max 50 &lt/meter><br>
+		&ltmeter value="10" min="0" max="100"> max 0 &lt/meter><br>
+		
+		<li>Output:</li>
+		<meter value="100" min="0" max="100"> max 100 </meter>
+		<meter value="50" min="0" max="100"> max 50 </meter>
+		<meter value="10" min="0" max="100"> max 0 </meter>
+	</ul>
+	
+	<hr style="border: 1px solid black;" />
+	
+	<li><h3>Progress Element</h3></li>
+	<ul>
+		<li>Syntax:</li>
+		
+		&ltprogress value="700" max="1000"> 700&lt/progress>
+		
+		<li>Output:</li>
+		<progress value="700" max="1000"> 700</progress>
+	</ul>
+	
+	<hr style="border: 1px solid black;" />
+	
+	<li><h3>Datalist Control</h3></li>
+	<ul>
+		<li>Syntax:</li>
+		
+		&ltlabel for="fruit">Fruit&lt/label><br>
+		&ltinput type="text" name="fruit" id="fruit" 
+		list="fruits"><br>
+		&ltdatalist id="fruits"><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&ltoption value="Peaches"><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&ltoption value="Apples"><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&ltoption value="Pears"><br>
+		&lt/datalist>
+		
+		<li>Output:</li>
+		
+		<label for="fruit">Fruit</label>
+		<input type="text" name="fruit" id="fruit" 
+		list="fruits">
+		<datalist id="fruits">
+			<option value="Peaches">
+			<option value="Apples">
+			<option value="Pears">
+		</datalist>
+	</ul>
+	
+	<li><h3>Slider Control</h3></li>
+	<ul>
+		<li>Syntax:</li>
+		
+		&ltlabel for="Hunger">
+			Express how hungry you are between 1 and 10 &ltbr><br>
+			Low &ltinput type="range" name="myChoice" id="Hunger" min="1" max="10"> High <br>
+			&lt/label>
+		
+		<li>Output:</li>
+		
+		<label for="Hunger">
+			Express how hungry you are between 1 and 10 <br>
+			Low <input type="range" name="myChoice" id="Hunger" min="1" max="10"> High
+			</label>
+	</ul>
+	
+	<li><h3>Calendar Control<h3></li>
+	<ul>
+		<li>Syntax:</li>
+		
+		&ltlabel for="theDate">What day?&lt/label><br>
+		&ltinput type="date" name="theDate" id="theDate">
+		
+		<li>Output:</li>
+		<label for="theDate">What day?</label>
+		<input type="date" name="theDate" id="theDate">
+	</ul>
+	
+</ol>
+</body>
+
+
+</html> 

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<style>
+#panel, #flip {
+    padding: 5x;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+</style>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Task1 of Assignment2</title>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+function convert() {
+	while (true) {
+		var unit = prompt("Please enter a temperature unit(1: To convert into celcius, 2: To convert into fahrenheit)");
+		switch (unit) {	
+			case "1":
+				while (true) {
+					var input = prompt("Please enter a temperature value to be converted to celsius");
+					if (isNaN(input)) {
+						alert("Must be a Number");
+						continue;
+					} else {
+						break;
+					}
+				}
+				var celsius = (input - 32) * (5 / 9);
+				alert(input + " fahrenheit converted to " + celsius + " celsius");
+				return;
+			case "2":
+				while (true) {
+					var input = prompt("Please enter a temperature value to be converted to fahrenheit");
+					if (isNaN(input)) {
+						alert("Must be a Number");
+						continue;	
+					} else {
+						break;
+					}
+				}
+				var fahrenheit = input * (9 / 5) + 32;
+				alert(input +" celsius converted to " +fahrenheit +" fahrenheit");
+				return;
+			default:
+				alert(" Number was not 1 or 2 ");
+				continue;
+		}
+	}
+};
+
+$(document).ready(function(){ 
+	$("#flip").click(function(){
+		$("#panel").slideDown("slow");
+	});
+});
+
+$(document).ready(function(){ 
+	$("#flip").dblclick(function(){
+		$("#panel").slideUp("slow");
+	});
+});
+
+</script>
+</head>
+	
+
+<body>
+<h3>Task1 of Assignment2- Temperature Conversion</h3>
+<div id="flip">Temperature Conversion</div>
+<div id="panel">This program converts from Celsius to Fahrenheit and vice versa</div>
+    
+<table>      
+	<tr>
+		<td><input name="btnConvert" id="btnConvert" value="Convert!" type="button" onClick="convert()"></td>
+	</tr>       
+</table>
+</body>
+</html>
